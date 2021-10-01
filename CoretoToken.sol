@@ -9,7 +9,7 @@ contract CoretoToken is ERC20 {
     
     
 	modifier onlyOwner {
-		require(msg.sender == owner);
+		require(msg.sender == owner, "");
 		_;
 	}
 	
